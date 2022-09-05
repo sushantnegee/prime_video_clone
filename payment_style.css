@@ -114,3 +114,22 @@ div > i{
     resize: vertical;
 }
 
+
+#footer {
+    background-color: #222222;
+    text-align: center;
+    padding: 20px;
+    font-weight: 300;
+  }
+  
+  #footer p {
+    display: inline;
+    color: #949494;
+  }
+  
+  #footer a {
+    text-decoration: none;
+    margin-right: 4px;
+    color: #0f79af;
+  }
+
