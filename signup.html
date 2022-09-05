@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="signup.css" />
+  </head>
+  <body>
+    <!-- <div class="container"> -->
+    <img
+      src="https://images-na.ssl-images-amazon.com/images/G/01/digital/video/avod/AV_Logo_150._CB430404026_.png"alt=""
+    /> 
+      <div class="container">
+      <div class="myform">
+        <form onsubmit="signup(event)">
+          <h1>Create account</h1>
+          <label for="">Your name</label>
+          <input type="text" id="name" placeholder="First and last name" />
+          <label for="">Email-ID</label>
+          <input type="text" id="mail" placeholder="Enter your Mail ID" />
+          <label for="">Password</label>
+          <input type="password" id="password" placeholder="At least 6 characters" />
+          <label for="">Re-enter password</label>
+          <input type="password" id="repassword" placeholder="" />
+          <button type="submit">Create Your Amazon account</button>
+        </form>
+        <p>By creating an account,you agree to the Amazon <br>Conditions of Use and Privacy Notice</p>
+        <p>Already have an account? <a href="login.html"> Sign In </a></p>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="./signup.js"></script>
