@@ -1,0 +1,211 @@
+* {
+    font-family: "Amazon Ember";
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  button {
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: 400;
+    background-color: #0f79af;
+    text-align: center;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #first-para {
+    background-image: url("images/amazon.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    color: white;
+  }
+  
+  #first-para > div {
+    width: 45%;
+    padding: 80px;
+    padding-bottom: 150px;
+  }
+  
+  #first-para-2 {
+    background-image: url("images/image10.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    color: white;
+    margin-top: -68px;
+    padding: 20px 0;
+  }
+  
+  #first-para-2 > div {
+      width: 45%;
+      padding: 80px;
+      padding-bottom: 150px;
+    }
+  
+  h1 {
+    font-size: 44.8px;
+    line-height: 49.6px;
+    font-weight: 400;
+  }
+  
+  h2 {
+    font-size: 24px;
+    line-height: 28.8px;
+    font-weight: 300;
+  }
+  
+  .free-trial-button {
+    padding: 15px 40px;
+  }
+  
+  .rent-now {
+    padding: 15px 100px;
+  }
+  
+  #first-para p {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 300;
+    margin-left: 20px;
+  }
+  
+  #first-para-1 {
+    background-image: url("images/image9.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    color: white;
+    margin-top: -68px;
+    padding: 20px 0;
+  }
+
+  #first-para-1 > div {
+    width: 45%;
+    padding: 80px;
+    padding-bottom: 150px;
+    text-align: left;
+    margin-left: 48%;
+    /* margin-bottom: 120px; */
+  }
+
+  .first-para-child-1 > p {
+    margin-left: 50px;
+    font-weight: 300;
+  }
+
+  .annual-sub {
+    padding: 15px 52px;
+    margin-top: 10px;
+  }
+
+  #second-para {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 15px;
+  }
+  
+  #second-para > div {
+    width: 45%;
+    /* margin: auto; */
+  }
+  
+  #second-para .about-channel {
+    width: 40%;
+  }
+  .channel-logo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    /* width: 100%; */
+  }
+  
+  .channel-logo img {
+    cursor: pointer;
+  }
+  
+  .channel-logo img:hover {
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+      rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+      rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    transition: 0.3s;
+  }
+  
+  #second-para img {
+    width: 100%;
+  }
+  
+  #third-para {
+    background-image: url("images/firetv.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    padding: 50px;
+    padding-bottom: 100px;
+  }
+  
+  #third-para div {
+    width: 45%;
+    margin-left: 55%;
+    text-align: left;
+    padding-bottom: 100px;
+  }
+  
+  #third-para p {
+    font-size: 21px;
+    line-height: 27px;
+    font-weight: 300;
+    margin-bottom: 50px;
+  }
+  
+  #fourth-para {
+    background-image: url("images/familyFriendly.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    padding: 50px;
+    padding-bottom: 20px;
+    margin-top: -80px;
+  }
+  
+  #fourth-para div {
+    width: 45%;
+    /* margin-r: 55%; */
+    text-align: left;
+    padding: 20px;
+    padding-bottom: 100px;
+  }
+  
+  #fourth-para p {
+    font-size: 21px;
+    line-height: 27px;
+    font-weight: 300;
+    margin-bottom: 50px;
+  }
+  
+  #footer {
+    background-color: #222222;
+    text-align: center;
+    padding: 20px;
+    font-weight: 300;
+  }
+  
+  #footer p {
+    display: inline;
+    color: #949494;
+  }
+  
+  #footer a {
+    text-decoration: none;
+    margin-right: 4px;
+    color: #0f79af;
+  }
+  
