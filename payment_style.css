@@ -1,0 +1,116 @@
+/* Styling of payment page */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style-type: none;
+    outline: none;
+}
+#upperPart{background-color: black;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+#upperPart .left_logo > img{
+    width: 250px;
+    margin: auto;
+    padding: 2;
+    /* margin: 20px 16rem; */
+    
+}
+#upperPart .left_logo {
+    text-align: center;
+    margin: auto;
+}
+#upperPart .right_part > img{
+    width: 500px;
+    height: 220px;
+
+}
+.left_logo > h3 {
+    font-size: 21px;
+    font-weight: 400;
+    color: #aaa;
+    margin-top: 10px;
+}
+#info_box{
+    border: 4px solid #1196ab;
+    display:flex;
+    width: 70%;
+    margin: auto;
+    margin-top: 30px;
+    padding: 20px;
+    border-left-width: 15px;
+    color: grey;
+    
+    
+}
+div > i{
+    color: #1196ab;
+    font-size: 25px;
+}
+
+.p1{
+    padding-left:10px;
+}
+.p2{
+    width: 70%;
+    margin: auto;
+    margin-top: 50px;
+    color: grey;
+    font-weight: 400;
+    
+}
+#payment_box{
+    border:2px solid #D5D9D9;
+    width: 70%;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 8px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    position: relative;
+    padding: 14px 18px;
+    
+}
+.p3{
+    margin-bottom: 15px;
+}
+.p4{
+    padding: 5px;
+}
+.p5{
+    padding: 20px ;
+}
+#payment_box div >img{
+    padding-left: 20px;
+    width: 300px;
+    height: 100px;
+}
+.payment_method{
+    padding-bottom: 50px;
+}
+.p6{
+    padding-bottom: 5px;
+}
+.p7{
+    padding:20px 20px 0px 20px;
+}
+.upi_enter{
+    margin-left: 15px;
+}
+.upi_enter {
+    width: auto;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
