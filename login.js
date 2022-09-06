@@ -16,4 +16,5 @@ function login(event) {
   } else {
     alert("Enter Correct Username and Password");
   }
+  window.location.href = "./signup.html";
 }

@@ -9,7 +9,7 @@
   }
   div.container {
     position: absolute;
-    top: 45%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
@@ -24,7 +24,7 @@
   div.container div.myform {
     width: 350px;
     margin-right: 10px;
-    height: 430px;
+    height: 530px;
   }
   
   div.container div.myform h1 {
@@ -84,7 +84,7 @@
     
     padding: 8px 3px;
     border-color: rgb(18, 14, 14);
-    font-family: "Courier New", Courier, monospace;
+    /* font-family: "Courier New", Courier, monospace; */
     font-weight: bold;
   }
   p {
