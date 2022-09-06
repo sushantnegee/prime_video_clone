@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Details</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+
+      form {
+        margin-bottom: 20px;
+        /* border: 3px solid red; */
+        display: flex;
+        /* align-items: center; */
+
+        flex-direction: column;
+        align-items: center;
+      }
+
+      input {
+        font-weight: bold;
+        width: 380px;
+        height: 30px;
+        margin-top: 15px;
+      }
+      select {
+        font-weight: bold;
+        margin-top: 15px;
+        width: 388px;
+        height: 34px;
+      }
+      h1 {
+        text-align: center;
+      }
+      table th {
+        border: 2px solid #ddd;
+        padding: 8px;
+        text-align: center;
+        background-color: aqua;
+      }
+      table td {
+        /* border: 1px solid #ddd; */
+        padding: 8px;
+        text-align: center;
+        background-color: #ddd;
+      }
+      /* table td,table th {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: center;
+        background-color: aqua;
+      } */
+      body table {
+        margin: auto;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="create">
+      <h1>MOVIE DETAILS</h1>
+      <form>
+        <h4>movie</h4>
+        <input placeholder="Movie Name" id="name" type="text" />
+        <h4>year</h4>
+        <input type="number" id="year" placeholder="year" />
+        <h4>link</h4>
+        <input type="text" id="imglink" placeholder="link" />
+        <h4>time</h4>
+        <input placeholder="time" id="time" type="text" />
+        <select id="language">
+          <option value="English">English</option>
+          <option value="Hindi">Hindi</option>
+          <option value="Punjabi">Punjabi</option>
+          <option value="Tamil">Tamil</option>
+          <option value="korean">korean</option>
+        </select>
+        <select id="genere">
+          <option value="Drama">Drama</option>
+          <option value="Fantacy">Fantacy</option>
+          <option value="Sci-fi">Sci-fi</option>
+          <option value="Action">Action</option>
+          <option value="Horror">Horror</option>
+        </select>
+        <input type="submit" value="submit" />
+      </form>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>movie Name</th>
+          <th>year</th>
+          <th>link</th>
+          <th>time</th>
+          <th>language</th>
+          <th>genere</th>
+          <th>delete</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Append all the rows here  -->
+      </tbody>
+    </table>
+  </body>
+  <script>
+    // write all your necessery scripts here
+    function printlist() {
+      list.map(function (elem) {
+        var tr = document.createElement("tr");
+        var td1 = document.createElement("td");
+        var td2 = document.createElement("td");
+        var td3 = document.createElement("td");
+        var td4 = document.createElement("td");
+        var td5 = document.createElement("td");
+        var td6 = document.createElement("td");
+        var td7 = document.createElement("td");
+        td1.innerText = elem.name;
+        td2.innerText = elem.year;
+        td3.innerText = elem.imglink;
+        td4.innerText = elem.time;
+        td5.innerText = elem.language;
+        td6.innerText = elem.genere;
+        td7.innerText = "delete";
+        td7.style.color = "white";
+        td7.style.backgroundColor = "red";
+        tr.append(td1, td2, td3, td4, td5,td6,td7);
+        var tbody = document.querySelector("tbody");
+        tbody.append(tr);
+      });
+    }
+    document.querySelector("form").addEventListener("submit", moviedetails);
+    var list = JSON.parse(localStorage.getItem("emp")) || [];
+    printlist(list);
+    function moviedetails() {
+      // event.preventDefault();
+      var name = document.getElementById("name").value;
+      var year = Number(document.getElementById("year").value);
+      var imglink = document.getElementById("imglink").value;
+      var time = document.getElementById("time").value;
+      var language = document.getElementById("language").value;
+      var genere = document.getElementById("genere").value;
+      var obj = {
+        name: name,
+        year: year,
+        imglink: imglink,
+        time: time,
+        language : language,
+        genere : genere,
+      };
+      list.push(obj);
+      localStorage.setItem("emp", JSON.stringify(list));
+      document.querySelector("tbody").innerText = "";
+      printlist(list);
+    }
+  </script>
+</html>
