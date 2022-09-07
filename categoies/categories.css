@@ -21,25 +21,17 @@
     margin: auto;
   }
   #innerImages {
-    /* border: 3px solid green; */
-    /* width: 100%; */
+    border: 3px solid green;
     margin: auto;
   }
-  #outer_box_for_movie {
-    margin: auto;
-    /* gap: 10px; */
-    width: 98%;
-    /* border: 3px solid gray  ; */
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 10px;
-  }
-  #outer_box_for_movie img {
-    /* border: 3px solid orangered; */
-    width: 284px;
-    height: 180px;
-  }
+  #innerImages h2{
+    margin: 10px;
+    margin-top: 25px;
+    position: relative;
+    left: 7 px;
+    color: #FFFFFF  }
+
+  
   /* Next & previous buttons */
   .prev,
   .next {
@@ -68,8 +60,59 @@
   .next:hover {
     background-color: rgba(0, 0, 0, 0.3);
   }
+  .hide {
+    display: none;
+  }
 
-  /* Caption text */
+  #outer_box_for_movie {
+    width: 98%;
+    margin: auto;
+    border: 3px solid gray  ;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(9,190px);
+    grid-column-gap: 0px;
+    grid-row-gap: 10px;
+  }
+
+  .card {
+    /* border: 3px solid orangered; */
+    /* margin: 0px; */
+    width: 284px;
+    height: 180px;
+    border-radius: 5px;
+  }
+  .hov{
+    background-color: rgb(26, 36, 47);
+    /* border: 2px solid red; */
+    width: 288px;
+    padding: 0px;
+    margin: auto;
+    border-radius: 5px;
+
+  }
+  .hiden{
+    /* display: none; */
+    margin-top: 4px;
+    /* border: 2px solid white;
+    margin-top: 12px; */
+    color: white;
+  }
+  .hov p{
+    color: white;
+  }
+  .hov:hover{
+    transform: scale(1.2);
+    transition: 0.3s ease;
+    border: 2px solid #00A8E1;
+  }
+  /* .hov:hover + .hiden{
+    display: block;
+  } */
+  /* .hov:hover +.card{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+  } */
+
   .text {
     color: #f2f2f2;
     font-size: 15px;
@@ -107,7 +150,7 @@
     left: 40%;
     /* display: flex; */
     /* justify-content: center; */
-    border: 2px solid red;
+    /* border: 2px solid red; */
   }
   .active,
   .dot:hover {
