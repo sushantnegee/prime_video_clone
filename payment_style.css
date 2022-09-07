@@ -252,7 +252,7 @@ table th {
 }
 .btn > button{
     cursor: pointer;
-    background-color: rgb(15,121,175);
+    background-color: #f3bd35;
     font-size: 17px;
     font-weight: 400;
     color: #000;
@@ -263,7 +263,7 @@ table th {
     border-radius: 2px;
     float: right;
     margin-bottom: 8px;
-    opacity: 0.3;
+    opacity: 0.5;
 }
 .btn p{
     width: 250px;
@@ -271,12 +271,6 @@ table th {
     margin: 5px;
     text-align: center;
     color: gray;
-}
-.btn a{
-    color: #007185;
-}
-.btn a:hover{
-    color: #90dffe;
 }
 
 
