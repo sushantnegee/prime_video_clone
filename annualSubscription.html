@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+
+    <!-- linked css file -->
+    <link rel="stylesheet" href="payment_style.css">
+
+
+    <!-- font-awesome kit -->
+    <script src="https://kit.fontawesome.com/390f330b7c.js" crossorigin="anonymous"></script>
+
+
+    <!-- title icon -->
+    <link rel="icon" href="https://freeiconshop.com/wp-content/uploads/edd/play-rounded-flat.png"> 
+    
+
+    
+    
+</head>
+<body>
+
+<!-- Navbar of Payment Page -->
+    <header>
+        <div id="upperPart" >
+            <div class="navbar_logo">
+                <img src="footerlogo.png" alt="">
+                <h3>Watch now, cancel anytime</h3>
+                <h2>Start your membership today</h2>
+            </div>
+
+            <div class="right_part">
+                
+                <img src="payment_page_navbar_movie.png" alt="">
+            </div>
+        </div>
+    </header>
+
+
+<!-- payment pricing information -->
+    <info>
+        <div id="info_box">
+            <i class="fa-sharp fa-solid fa-circle-info"></i>
+            <p class="p1"><b style="color: black;">₹999</b> will be charged for the <b style="color:black;">ONE</b>  year of your <b style="color: black;">prime</b> subscription. Thereafter, the subscription will renew automatically at full price. Cancel anytime.</p>
+        </div>
+    </info>
+
+
+<!-- payment selection heading -->
+    <h1 class="p2">Select a payment method</h1>
+    
+
+<!-- Payment Box -> different type of payments -->
+    <div id="payment_box">
+        <h3 class="p3">More payment option</h3>
+        <div class="payment_method" >
+            <input type="checkbox"  id="checkbox-input" value='debit' onchange ="ShowAndHide()">
+            <span class="p4">Add Debit/Credit/ATM card</span>
+            <a href=""> Learn more <a href=""> <i class="fas fa-angle-down"></i></a>
+            <p class="p5">You can save your cards as per new RBI guidelines.</p>
+            <img src="https://www.industrialautomationindia.in/images/icons/cards.svg" alt="">
+
+            
+        </div>
+        <!-- after select card option then card details appear  -->
+        <div class="card_details_box">
+            <div class="card_details">
+                <div class="name">
+                    <label for="cname">Name on Card</label><br>
+                    <input type="text" id="cname" name="cardname" placeholder="John Smith">
+                </div>
+
+                <div class="card_number">
+                    <label for="ccnum">Card number</label><br>
+                    <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                </div>
+
+                <div class="cvv">
+                    <label for="ccvv">Cvv</label><br>
+                    <input type="number" id="ccvv" name="cvv" placeholder="532">
+                </div>
+
+                <div class="card_expiry">
+                    <label for="expmonth">Exp Month</label><br>
+                    <input type="month" id="expmonth" name="expmonth" placeholder="September">
+                </div>
+
+
+                <div class="save_card">
+                    <button id="add_card" >Add your card</button>
+                </div>
+
+            </div>
+            <div>
+                <h1 class="save_card_heading">Saved Card</h1>
+                <table>
+                    <!-- Dont change order of columns -->
+                    <thead>
+                    <tr>
+                        <th>Card-Holder-Name</th>
+                        <th>Card-Number</th>
+                        <th>CVV</th>
+                        <th>Delete</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <!-- Append your output to tbody -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <gift>
+            <div>
+                <span id="promoDown" class="p6 promoCode">Enter a promotional code <i class="fas fa-angle-down"></i></span>
+                <p class="p6" style="margin-left:15px ;">Use Promo Code: <span class="promo">MASAI30</span>
+
+                <div class="promoClass">
+                    <input type="text"  id="code" placeholder="Enter Code">
+                    <button  id='apply_coupon'>Apply</button>
+                </div>
+                <p id="validpromo"></p>
+            </div>  
+        </gift>
+    </div>
+
+    <section class='btn'>
+        <button type='submit' onclick='paid()' class='continueBtn' disabled>Continue</button>
+        <p>---------------------------  Or  ----------------------------</p>
+        <p> Join Prime Annually with auto-renew(select credit and debit cards are eligible)</p>
+    </section>
+
+    <footer id="footer">
+        <img src="footerlogo.png" alt="">
+        <br>
+        <a href="#">Terms and Privacy</a>
+        <a href="#">Notice</a>
+        <a href="#">Send us feedback</a>
+        <a href="#">Help</a>
+        <p>© 1996-2022, Amazon.com, Inc. or its affiliates</p>
+    
+    </footer>
+</body>
+<!-- linked js file -->
+<script src="payment.js"></script>
+</html>
