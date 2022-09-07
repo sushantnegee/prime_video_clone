@@ -22,7 +22,7 @@ function check(event) {
     var expiry=document.getElementById('expmonth');
 
 
-    console.log("press");
+    
     if (name.length == 0 && cnum.length == 0) {
         alert('Please fill in name and cardNumber');
 
@@ -98,7 +98,6 @@ function promoClick() {
 // checking promocode is valid or not
 document.getElementById("apply_coupon").addEventListener("click",validPromoCode);
 function validPromoCode(){
-    console.log("amit")
     var valid=document.getElementById("code").value;
     if(valid==="MASAI30")
     {
