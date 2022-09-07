@@ -9,7 +9,7 @@
   }
   div.container {
     position: absolute;
-    top: 45%;
+    top: 46%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
@@ -17,12 +17,12 @@
     align-items: center;
     background-color: white;
     padding: 30px;
-    box-shadow: 0 50px 50px -50px darkslategray;
+    /* box-shadow: 0 50px 50px -50px darkslategray; */
     /* border-radius: 100px; */
   }
   
   div.container div.myform {
-    width: 350px;
+    width: 345px;
     margin-right: 30px;
     height: 500px;
   }
@@ -92,7 +92,7 @@
     padding: 15px;
     font-size: 15px;
     margin-left:10px;
-    background-color:rgb(176, 136, 213);
+    background-color: aliceblue;
   }
     a {
     text-decoration: none;

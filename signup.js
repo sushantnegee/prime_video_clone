@@ -5,6 +5,7 @@ function signup(event) {
     name: document.getElementById("name").value,
     email: document.getElementById("mail").value,
     password: document.getElementById("password").value,
+    password: document.getElementById("repassword").value,
   };
   arr.push(data);
   //console.log(arr);

@@ -17,7 +17,7 @@
     align-items: center;
     background-color: white;
     padding: 30px;
-    box-shadow: 0 50px 50px -50px darkslategray;
+    /* box-shadow: 0 50px 50px -50px darkslategray; */
     /* border-radius: 100px; */
   }
   
