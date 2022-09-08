@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="categories.css" />
+
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="navbar_style.css">
+    <script src="https://kit.fontawesome.com/7a0b7110fe.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Genere fantacy</title>
+  </head>
+  <body>
+    <div id="navbar">
+      <!-- primelogo -->
+      <div id="leftnavbar">
+          <div>
+          <!-- <img id="primelog" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGhAcO0AUNHB_S_n239ctUl83z1ln2EMuVwlXrTsnMJds7vYQwZ7MC15RSvjbiYXgjPQA&usqp=CAU"
+          alt="prime logo"/> -->
+          <img id="primelogo" src="prime-video.png"
+          alt="prime logo"/>
+          </div>
+          <div>Home</div>
+          <div>Store</div>
+          <div>Channels</div>
+          <div class="dropdown">
+              <button class="dropbtn">Categories&nbsp;<i class="fa fa-caret-down"></i></button>
+              <div class="dropdown-content">
+                  <div id="trying">
+                  <div id="audiolang">
+                  <p>Audio Languages</p>
+                  <div>
+                      <a href="#">All</a>
+                  </div>
+                  <div>
+                  <a href="#">Hindi</a>
+                  </div>
+                  <div>
+                  <a href="#">English</a>
+                  </div>
+                  <div>
+                  <a href="#">Tamil</a>
+                  </div>
+                  <div>
+                  <a href="#">Punjabi</a>
+                  </div>
+                  <div>
+                  <a href="#">Bengali</a>
+                  </div>
+                  </div>
+                  <div id="genre">
+                  <p>genre</p>
+                  <div>
+                      <a href="#">All</a>
+                  </div>
+                  <div>
+                  <a href="#">Drama</a>
+                  </div>
+                  <div>
+                  <a href="#">Fantasy</a>
+                  </div>
+                  <div>
+                  <a href="#">Sci-fi</a>
+                  </div>
+                  <div>
+                  <a href="#">Action</a>
+                  </div>
+                  <div>
+                  <a href="#">Horror</a>
+                  </div>
+                  </div>
+              </div>
+          </div>
+          </div>
+          <div>Watchlist</div>
+      </div>
+      <!-- navbar right side -->
+      <div id="navbarrightside">
+      <div id="tryforfree">
+      <div><a href="#">Try For Free</a></div>
+      </div>
+      <div id="lan"><button><i class="fa-sharp fa-solid fa-globe">&nbsp;</i>EN</button></div> 
+      <div class="userdropdown">
+      <div class="dropuserbtn"><button><i class="fa fa-user-o" ></i>&nbsp;<i class="fa fa-caret-down"></i></button>
+              <div id="cat">
+                  <div>
+                      <a href="#">Sign In</a>
+                  </div>
+                  <div>
+                      <a href="#">Watch Anywhere</a>
+                  </div>
+                  <div>
+                      <a href="#">Help</a>
+                  </div>
+
+              </div>
+      </div>
+      </div>
+      </div> 
+  </div>
+    <div>
+      
+      <div id="innerImages">
+        <h2>Genere : Fantacy</h2>
+        <!-- //append here -->
+      </div>
+    </div>
+    <footer id="footer">
+      <img  id="footerlogo" src="prime-video.png" alt="">
+      <br>
+      <a href="#">Terms and Privacy</a>
+      <a href="#">Notice</a>
+      <a href="#">Send us feedback</a>
+      <a href="#">Help</a>
+      <p>©️ 1996-2022, Amazon.com, Inc. or its affiliates</p>
+  
+  </footer>
+  </body>
+  <!-- <script src="categories.js"></script> -->
+
+</html>
+<script src="all.js"></script>
+<script>
+    // import {list1} from "all.js";
+    // console.log(list1);
+// var list=JSON.parse(localStorage.getItem("wishlists"))||[];
+var wishlists=JSON.parse(localStorage.getItem("wishlists"))||[];
+
+var div = document.createElement("div");
+div.setAttribute("id", "outer_box_for_movie");
+
+list1.forEach(function (elem, index) {
+if(elem.genre == "Fantacy"){
+    var popUpDiv = document.createElement("div");
+  var popUp1st = document.createElement("div");
+  var popUpSecond = document.createElement("div");
+  var popUpImgDiv = document.createElement("div");
+  var img = document.createElement("img");
+  var imgPrime = document.createElement("img");
+  var h4 = document.createElement("h4");
+  var p1 = document.createElement("p");
+  var p4 = document.createElement("p");
+  var button = document.createElement("button");
+  var divAdd = document.createElement("div");
+
+  img.setAttribute("src", elem.imglink);
+  imgPrime.setAttribute("src", "https://m.media-amazon.com/images/G/01/digital/video/web/cues/v3/prime.svg");
+  h4.innerText = elem.name;
+  p1.innerText = elem.time;
+  p4.innerText = elem.language;
+  popUp1st.setAttribute("class", "popUp1st");
+  img.setAttribute("class", "card");
+  imgPrime.setAttribute("class", "imgPrime");
+  popUpDiv.setAttribute("class", "popUpDiv");
+  h4.setAttribute("class", "MovieName");
+  button.setAttribute("class", "addButton");
+  popUpSecond.setAttribute("class", "popUp2nd");
+  popUpImgDiv.setAttribute("class","popUpImgDiv")
+  // button.innerText = index;
+  // popUp1st.append(h4, button);
+  divAdd.innerHTML= '<i class="fa fa-plus" aria-hidden="true"></i>';
+  popUpImgDiv.append(img,imgPrime);
+  popUp1st.append(h4, divAdd);
+  popUpSecond.append(p1, p4);
+  popUpDiv.append(popUpImgDiv, popUp1st, popUpSecond);
+  div.append(popUpDiv);
+  divAdd.addEventListener("click",wishlist);
+  function wishlist(){
+    console.log(elem);
+    wishlists.push(elem);
+    localStorage.setItem("wishlists",JSON.stringify(wishlists));
+  }
+}
+  
+});
+document.getElementById("innerImages").append(div);
+</script>
