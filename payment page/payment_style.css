@@ -1,0 +1,301 @@
+/* Styling of payment page */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style-type: none;
+    outline: none;
+}
+/* NavBar of Payment Page */
+#upperPart{
+    background-color:rgb(26,36,47);
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+.navbar_logo > img{
+    width: 200px;
+    margin: auto;
+}
+    
+.navbar_logo > h3 {
+    font-size: 21px;
+    font-weight: 400;
+    color: #aaa;
+    margin-top: 10px; 
+    } 
+
+.navbar_logo {
+    text-align: center;
+    margin: auto;
+}
+.navbar_logo h3{
+    margin: 10px;
+}
+.navbar_logo h2{
+    margin: auto;
+}
+
+
+.right_part > img{
+    width: 600px;
+    height: 220px;
+
+}
+
+/* pricing information */
+#info_box{
+    border: 4px solid #1196ab;
+    display:flex;
+    width: 70%;
+    margin: auto;
+    margin-top: 30px;
+    padding: 20px;
+    border-left-width: 15px;
+    color: grey;
+    border-radius: 8px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    
+    
+}
+#info_box  i{
+    color: #1196ab;
+    font-size: 25px;
+}
+
+.p1{
+    padding-left:10px;
+}
+
+
+/* Selecting payment heading */
+.p2{
+    width: 70%;
+    margin: auto;
+    margin-top: 50px;
+    color: grey;
+    font-weight: 400;
+    
+}
+
+/* payment box and diff type of payment */
+#payment_box{
+    border:2px solid #D5D9D9;
+    width: 70%;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 8px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    position: relative;
+    padding: 14px 18px;
+    margin-bottom: 50px;
+    
+}
+.p3{
+    margin-bottom: 15px;
+}
+.p4{
+    padding: 5px;
+}
+.p5{
+    padding: 20px ;
+}
+#payment_box div >img{
+    padding-left: 20px;
+    width: 300px;
+    height: 100px;
+}
+.payment_method{
+    margin: 50px;
+}
+
+
+
+
+
+.card_details{
+    display: none;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    margin:auto;
+    
+}
+
+.card_details input{
+    padding: 8px;
+    border-radius: 3px;
+    outline: none;
+    border : 1px solid gray;
+}
+.card_details input:focus{
+    border: 2px solid #0f79af;
+}
+
+/* table of saved card */
+table {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 85%;
+    margin: auto;
+    margin-top: 30px;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-left: 0%;
+  }
+  
+  
+  
+table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: rgb(15,121,175);
+    color: white;
+    text-align: center;
+    margin: 20px;
+  }
+  * {
+    box-sizing: border-box;
+  }
+#add_card{
+    background-color: #0F79AF;
+    font-size: 14px;
+    font-weight: 400;
+    color: black;
+    width: 120px;
+    padding: 12px;
+    margin: 15px 15px 15px 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+#add_card:hover{
+    background-color: #032f46 ;
+    color: #fff;
+}
+
+
+.save_card_heading{
+    font-weight: 500;
+    text-decoration:underline;
+    
+}
+
+/* promo */
+.promo {
+    background: #ccc;
+    padding: 3px;
+  }
+.p6{
+    margin: 10px;
+    margin-left: 15px;
+}
+.promoClass input{
+    padding: 8px;
+    border-radius: 3px;
+    outline: none;
+    border : 1px solid gray;
+    margin-left: 18px;
+}
+.promoClass input:focus{
+    border: 2px solid #0f79af;
+}
+
+#apply_coupon{
+    background-color:  #0f79af;
+    font-size: 14px;
+    font-weight: 400;
+    color: black;
+    width: 120px;
+    padding: 10px 6px;
+    margin: 15px 15px 15px 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+#apply_coupon:hover{
+    background-color: #032f46;
+    color: #fff;
+}
+.promoClass{
+    display: none;
+}
+.promoClass{
+    font-size: 18px;
+    color: #007185;
+}
+
+.promoCode:hover{
+    color: #C7511F;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#validpromo{
+    color: #C7511F;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 20px;
+    margin-right: 50px;
+}
+.btn > button{
+    cursor: pointer;
+    background-color: #f3bd35;
+    font-size: 17px;
+    font-weight: 400;
+    color: #000;
+    min-width: 250px;
+    min-height: 50px;
+    border: none;
+    margin: 15px 0;
+    border-radius: 2px;
+    float: right;
+    margin-bottom: 8px;
+    opacity: 0.5;
+}
+.btn p{
+    width: 250px;
+    font-size: 12px;
+    margin: 5px;
+    text-align: center;
+    color: gray;
+}
+
+
+
+/* footer part */
+#footer {
+    background-color: rgb(15 23 30);
+    text-align: center;
+    padding: 20px;
+    font-weight: 300;
+  }
+  
+  #footer p {
+    display: inline;
+    color: #949494;
+  }
+  
+  #footer a {
+    text-decoration: none;
+    margin-right: 4px;
+    color: #0f79af;
+  }
+  #footer img{
+    width: 109px;
+    height: 32px;
+    cursor: pointer;
+  }
+
