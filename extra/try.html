@@ -77,9 +77,9 @@
           <option value="Hindi">Hindi</option>
           <option value="Punjabi">Punjabi</option>
           <option value="Tamil">Tamil</option>
-          <option value="korean">korean</option>
+          <option value="Bengali">Bengali</option>
         </select>
-        <select id="genere">
+        <select id="genre">
           <option value="Drama">Drama</option>
           <option value="Fantacy">Fantacy</option>
           <option value="Sci-fi">Sci-fi</option>
@@ -97,7 +97,7 @@
           <th>link</th>
           <th>time</th>
           <th>language</th>
-          <th>genere</th>
+          <th>genre</th>
           <th>delete</th>
         </tr>
       </thead>
@@ -123,7 +123,7 @@
         td3.innerText = elem.imglink;
         td4.innerText = elem.time;
         td5.innerText = elem.language;
-        td6.innerText = elem.genere;
+        td6.innerText = elem.genre;
         td7.innerText = "delete";
         td7.style.color = "white";
         td7.style.backgroundColor = "red";
@@ -142,14 +142,14 @@
       var imglink = document.getElementById("imglink").value;
       var time = document.getElementById("time").value;
       var language = document.getElementById("language").value;
-      var genere = document.getElementById("genere").value;
+      var genre = document.getElementById("genre").value;
       var obj = {
         name: name,
         year: year,
         imglink: imglink,
         time: time,
         language : language,
-        genere : genere,
+        genre : genre,
       };
       list.push(obj);
       localStorage.setItem("emp", JSON.stringify(list));

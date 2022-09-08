@@ -399,28 +399,56 @@ var list1 = [
 ];
 //var list = JSON.parse(localStorage.getItem("emp")) || [];
 
+var wishlists=JSON.parse(localStorage.getItem("wishlists"))||[];
+
 var div = document.createElement("div");
 div.setAttribute("id", "outer_box_for_movie");
 
-list1.map(function (elem ,index) {
-  var div1 = document.createElement("div");
+list1.forEach(function (elem, index) {
+  
+  var popUpDiv = document.createElement("div");
+  var popUp1st = document.createElement("div");
+  var popUpSecond = document.createElement("div");
+  var popUpImgDiv = document.createElement("div");
   var img = document.createElement("img");
+  var imgPrime = document.createElement("img");
   var h4 = document.createElement("h4");
   var p1 = document.createElement("p");
-  var p2 = document.createElement("p");
-  var p3 = document.createElement("p");
   var p4 = document.createElement("p");
+  var button = document.createElement("button");
+  var divAdd = document.createElement("div");
+
   img.setAttribute("src", elem.imglink);
+  imgPrime.setAttribute("src", "https://m.media-amazon.com/images/G/01/digital/video/web/cues/v3/prime.svg");
   h4.innerText = elem.name;
   p1.innerText = elem.time;
-  p2.innerText = elem.year;
-  p3.innerText = elem.genere;
   p4.innerText = elem.language;
-  console.log(p3);
+  popUp1st.setAttribute("class", "popUp1st");
   img.setAttribute("class", "card");
-  div1.setAttribute("class", "hov");
-  h4.setAttribute("class", "hiden");
-  div1.append(img,h4,p1,p2,p3,p4);
-  div.append(div1);
+  imgPrime.setAttribute("class", "imgPrime");
+  popUpDiv.setAttribute("class", "popUpDiv");
+  h4.setAttribute("class", "MovieName");
+  button.setAttribute("class", "addButton");
+  popUpSecond.setAttribute("class", "popUp2nd");
+  popUpImgDiv.setAttribute("class","popUpImgDiv")
+  // button.innerText = index;
+  // popUp1st.append(h4, button);
+  divAdd.innerHTML= '<i class="fa fa-plus" aria-hidden="true"></i>';
+  popUpImgDiv.append(img,imgPrime);
+  popUp1st.append(h4, divAdd);
+  popUpSecond.append(p1, p4);
+  popUpDiv.append(popUpImgDiv, popUp1st, popUpSecond);
+  div.append(popUpDiv);
+  divAdd.addEventListener("click",wishlist);
+  function wishlist(){
+    console.log(elem);
+    wishlists.push(elem);
+    localStorage.setItem("wishlists",JSON.stringify(wishlists));
+  }
+  
 });
 document.getElementById("innerImages").append(div);
+// document.querySelector(".addButton").addEventListener("click", addFunction);
+//  function addFunction{
+//   var i = Number(button.innerText);
+//  }

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="categories.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Bengali Movies</title>
+  </head>
+  <body>
+    <div>
+      
+      <div id="innerImages">
+        <h2>Bengali Movies</h2>
+        <!-- //append here -->
+      </div>
+    </div>
+  </body>
+  <!-- <script src="categories.js"></script> -->
+
+</html>
+<script src="all.js"></script>
+<script>
+    // import {list1} from "all.js";
+    // console.log(list1);
+// var list=JSON.parse(localStorage.getItem("wishlists"))||[];
+var wishlists=JSON.parse(localStorage.getItem("wishlists"))||[];
+
+var div = document.createElement("div");
+div.setAttribute("id", "outer_box_for_movie");
+
+list1.forEach(function (elem, index) {
+if(elem.language == "Bengali"){
+    var popUpDiv = document.createElement("div");
+  var popUp1st = document.createElement("div");
+  var popUpSecond = document.createElement("div");
+  var popUpImgDiv = document.createElement("div");
+  var img = document.createElement("img");
+  var imgPrime = document.createElement("img");
+  var h4 = document.createElement("h4");
+  var p1 = document.createElement("p");
+  var p4 = document.createElement("p");
+  var button = document.createElement("button");
+  var divAdd = document.createElement("div");
+
+  img.setAttribute("src", elem.imglink);
+  imgPrime.setAttribute("src", "https://m.media-amazon.com/images/G/01/digital/video/web/cues/v3/prime.svg");
+  h4.innerText = elem.name;
+  p1.innerText = elem.time;
+  p4.innerText = elem.language;
+  popUp1st.setAttribute("class", "popUp1st");
+  img.setAttribute("class", "card");
+  imgPrime.setAttribute("class", "imgPrime");
+  popUpDiv.setAttribute("class", "popUpDiv");
+  h4.setAttribute("class", "MovieName");
+  button.setAttribute("class", "addButton");
+  popUpSecond.setAttribute("class", "popUp2nd");
+  popUpImgDiv.setAttribute("class","popUpImgDiv")
+  // button.innerText = index;
+  // popUp1st.append(h4, button);
+  divAdd.innerHTML= '<i class="fa fa-plus" aria-hidden="true"></i>';
+  popUpImgDiv.append(img,imgPrime);
+  popUp1st.append(h4, divAdd);
+  popUpSecond.append(p1, p4);
+  popUpDiv.append(popUpImgDiv, popUp1st, popUpSecond);
+  div.append(popUpDiv);
+  divAdd.addEventListener("click",wishlist);
+  function wishlist(){
+    console.log(elem);
+    wishlists.push(elem);
+    localStorage.setItem("wishlists",JSON.stringify(wishlists));
+  }
+}
+  
+});
+document.getElementById("innerImages").append(div);
+</script>
