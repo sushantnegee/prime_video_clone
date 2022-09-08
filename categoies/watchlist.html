@@ -19,7 +19,7 @@
       referrerpolicy="no-referrer"
     />
 
-    <title>Genere fantacy</title>
+    <title>watchlist</title>
   </head>
   <body>
     <div id="navbar">
@@ -112,7 +112,7 @@
     <div>
       
       <div id="innerImages">
-        <h2>Genere : Horror</h2>
+        <h2>watchlist</h2>
         <!-- //append here -->
       </div>
     </div>
@@ -130,19 +130,17 @@
   <!-- <script src="categories.js"></script> -->
 
 </html>
-<script src="all.js"></script>
+<!-- <script src="all.js"></script> -->
 <script>
-    // import {list1} from "all.js";
-    // console.log(list1);
-// var list=JSON.parse(localStorage.getItem("wishlists"))||[];
-var wishlists=JSON.parse(localStorage.getItem("wishlists"))||[];
+
+var list=JSON.parse(localStorage.getItem("wishlists"))||[];
 
 var div = document.createElement("div");
 div.setAttribute("id", "outer_box_for_movie");
 
-list1.forEach(function (elem, index) {
-if(elem.genre == "Horror"){
-    var popUpDiv = document.createElement("div");
+list.forEach(function (elem, index) {
+  
+  var popUpDiv = document.createElement("div");
   var popUp1st = document.createElement("div");
   var popUpSecond = document.createElement("div");
   var popUpImgDiv = document.createElement("div");
@@ -175,13 +173,6 @@ if(elem.genre == "Horror"){
   popUpSecond.append(p1, p4);
   popUpDiv.append(popUpImgDiv, popUp1st, popUpSecond);
   div.append(popUpDiv);
-  divAdd.addEventListener("click",wishlist);
-  function wishlist(){
-    console.log(elem);
-    wishlists.push(elem);
-    localStorage.setItem("wishlists",JSON.stringify(wishlists));
-  }
-}
   
 });
 document.getElementById("innerImages").append(div);

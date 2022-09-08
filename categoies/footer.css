@@ -1,0 +1,27 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+#footer {
+    margin-top: -80px;
+    background-color: rgb(15,23,30);
+    text-align: center;
+    padding: 20px;
+    font-weight: 300;
+  }
+  
+  #footer p {
+    display: inline;
+    color: #949494;
+  }
+  
+  #footer a {
+    text-decoration: none;
+    margin-right: 4px;
+    color: rgb(0,170,225);
+  }
+  #footerlogo{
+    width: 109px;
+    height: 32px;
+  }
+  

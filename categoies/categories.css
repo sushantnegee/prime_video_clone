@@ -9,15 +9,6 @@ body {
 .mySlides {
   display: none;
 }
-hr {
-  border: none;
-  height: 2px;
-  /* Set the hr color */
-  margin-left: 22px;
-  margin-right: 22px;
-  color: #8197A4; /* old IE */
-  background-color: #8197A4; /* Modern Browsers */
-}
 img {
   vertical-align: middle;
 }
@@ -32,12 +23,10 @@ img {
 #innerImages {
   /* border: 3px solid green; */
   margin: auto;
-  /* border: 2px solid red; */
 }
 #innerImages h2 {
   margin: 10px;
   margin-top: 25px;
-  margin-left: 20px;
   position: relative;
   left: 7 px;
   color: #ffffff;
@@ -78,8 +67,7 @@ img {
 #outer_box_for_movie {
   width: 98%;
   margin: auto;
-  margin-left: 16px;
-  /* border: 3px solid yellow; */
+  /* border: 3px solid gray; */
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(9, 190px);
