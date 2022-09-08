@@ -1,0 +1,554 @@
+/* body{
+    background-color: #1b2530 ;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+#navbar{
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#navbar a{
+    float: left;
+    font-size: 16px;
+    color: gray;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.dropdown{
+    float: left;
+    overflow: hidden;
+}
+.userdropdown{
+    float: right;
+    overflow: hidden;
+}
+.userdropdown .dropuserbtn{
+    font-size: 18px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    min-width: 150px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+
+}
+.dropdown .dropbtn {
+    font-size: 18px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    min-width: 150px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #273f58 ;
+    min-width: 30%;
+    box-shadow: 0px 8px 16px 0px rgba(136, 82, 82, 0.2);
+    z-index: 1;
+  }
+  #cat{
+    display: none;
+    position: absolute;
+    background-color: #273f58 ;
+    min-width: 10%;
+    z-index: 1;
+  }
+  .dropdown-content a {
+    float: none;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  #cat a{
+    float: none;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  .dropdown-content p{
+    padding: 12px 16px;
+    margin: 0;
+  }
+  .userdropdown:hover #cat{
+    display: block;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+#leftnavbar{
+    display: flex;
+    color: white;
+}
+#leftnavbar > div{
+    margin: auto;
+    padding: 0px 20px;
+    font-size: 18px;
+    font-family: inherit;
+    cursor: pointer;
+} */
+/* #leftnavbar img{
+    width: 150px;
+    height: 60px;
+    cursor: pointer;
+} */
+/* #navbarrightside{
+    display: flex;
+    color: white;
+    width: 32.5%;
+} */
+/* #navbarrightside > div{
+    margin: auto;
+    padding: 0px 20px;
+    font-size: 18px;
+    font-family: inherit;
+    cursor: pointer; 
+}
+#tryforfree a{
+    padding: 8px 7px;
+    background-color: rgb(15,121,175);
+    color: white;
+    min-width: 110px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#lan button{
+    min-width: 100px;
+    font-size: 18px;
+    border: none;
+    color: #9ca2a7;
+    background-color: inherit;
+
+}
+.user button{
+    background-color: inherit;
+}
+.user i{
+    font-size: 20px;
+    color: #9ca2a7;
+    background-color: inherit;
+}
+#tryforfree a:hover{
+    background-color: rgb(15, 146, 211);
+}
+#audiolang{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+#audiolang a:hover{
+   color: white;
+}
+#genre a:hover{
+    color: white;
+ }
+ #cat a:hover{
+    color: white;
+ }
+#genre{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+#trying{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.dropuserbtn button{
+    background-color: inherit;
+    color: #9ca2a7;
+    border: 0;
+    font-size: 18px;
+    margin: auto;
+} */
+.poster img{
+    width: 100%;
+}
+.poster{
+    position: relative;
+    text-align: center;
+    margin: 0px 0px;
+   
+}
+
+.head1 h1{
+    position: absolute;
+    top: 100px;
+    right: 114px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    min-width: 415px;
+}
+.head3 h2{
+    position: absolute;
+    top: 170px;
+    right: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+}
+.afterposter{
+    color: #9ca2a7;
+    background-color: white;
+    margin-top: -4px;
+    padding-bottom: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.afterposter div{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+.afterposter button{
+    background-color: rgb(15,121,175);
+    text-decoration: none;
+    border: 0;
+    padding: 12px 10px;
+    font-size: 18px;
+    border-radius: 4px;
+}
+.afterposter button:hover{
+    background-color: rgb(15, 146, 211);;
+}
+.afterposter a{
+    text-decoration: none;
+    color: white;
+}
+#maincontent{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    font-family: Arial, Helvetica, sans-serif;
+    gap: 0;
+}
+#maincontent div {
+    background-color: white;
+}
+.topofmaincon{
+    background-color: white;
+    color: black;
+    padding-left: 20px;
+}
+.topofmaincon h1{
+    margin-bottom: 20px;
+}
+.topofmaincon {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.detailsofcontent{
+    display: flex;
+    padding-bottom: 40px;
+}
+
+.detailsofcontent img {
+    width: 243px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.titlestore h1{
+    color: gray;
+    font-weight: 550;
+    background-color: white;
+    margin-top: -20px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 15px;
+}
+.downstore{
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    margin-top: 0px;
+}
+.downstore div{
+    padding-right: 10px;
+}
+#primelogoimg {
+    width: 8%;
+    justify-content: center;
+    margin: auto;
+}
+#primelogoimg img{
+    width: 110px;  
+}
+#lastlineafterlogo {
+    display: flex;
+    justify-content: center;
+}
+#lastlineafterlogo a{
+    text-decoration: none;
+    color: rgb(15,121,175);
+}
+#lastlineafterlogo div{
+    padding-right: 15px;
+}
+
+#lastlineafterlogo p{
+    margin-top: -2px;
+    color: #9ca2a7;
+    padding-bottom: 10px;
+}
+body{
+    background-color: #1b2530 ;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+#navbar{
+    display: flex;
+    width: 100%;
+    height: 72px;
+    overflow: hidden;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+#navbar a{
+    float: left;
+    font-size: 16px;
+    color: rgb(125,134,140);
+    font-weight: 500;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.dropdown{
+    float: left;
+    overflow: hidden;
+}
+.userdropdown{
+    float: left;
+    overflow: hidden;
+}
+.userdropdown .dropuserbtn{
+    font-size: 18px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    min-width: 150px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+
+}
+.dropdown .dropbtn {
+    font-size: 18px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    min-width: 150px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #273f58 ;
+    min-width: 30%;
+    box-shadow: 0px 8px 16px 0px rgba(136, 82, 82, 0.2);
+    z-index: 1;
+  }
+  #cat{
+    display: none;
+    position: absolute;
+    background-color: #273f58 ;
+    min-width: 10%;
+    z-index: 1;
+  }
+  .dropdown-content a {
+    float: none;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  #cat a{
+    float: none;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  .dropdown-content p{
+    padding: 12px 16px;
+    margin: 0;
+  }
+  .userdropdown:hover #cat{
+    display: block;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+#leftnavbar{
+    display: flex;
+    color: white;
+}
+#leftnavbar > div{
+    margin: auto;
+    padding: 0px 20px;
+    font-size: 18px;
+    font-family: inherit;
+    cursor: pointer;
+}
+#primelogo{
+    width: 112px;
+    height: 40px;
+    cursor: pointer;
+}
+#navbarrightside{
+    display: flex;
+    color: white;
+    width: 32.5%;
+}
+#navbarrightside > div{
+    margin: auto;
+    padding: 0px 20px;
+    font-size: 18px;
+    font-family: inherit;
+    cursor: pointer; 
+}
+#tryforfree a{
+    padding: 8px 7px;
+    background-color: rgb(15,121,175);
+    color: white;
+    min-width: 110px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#lan button{
+    min-width: 100px;
+    font-size: 18px;
+    border: none;
+    color: #9ca2a7;
+    background-color: inherit;
+
+}
+.user button{
+    background-color: inherit;
+}
+.user i{
+    font-size: 20px;
+    color: #9ca2a7;
+    background-color: inherit;
+}
+#tryforfree a:hover{
+    background-color: rgb(15, 146, 211);
+}
+#audiolang{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+#audiolang a:hover{
+   color: white;
+}
+#genre a:hover{
+    color: white;
+ }
+ #cat a:hover{
+    color: white;
+ }
+#genre{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+#trying{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.dropuserbtn button{
+    background-color: inherit;
+    color: #9ca2a7;
+    border: 0;
+    font-size: 18px;
+    margin: auto;
+}
+
+/* Medium screens */
+@media all and (min-width: 401px) and (max-width: 800px) {
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    .detailsofcontent{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 40px;
+    }
+    .downstore{
+        display: grid;
+        background-color: white;
+        grid-template-columns: repeat(2,1fr);
+        justify-content: center;
+        margin-top: 0px;
+    }
+    #lastlineafterlogo {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(3,1fr);
+    }
+    .head1 h1{
+        position: absolute;
+        position: absolute;
+        bottom: 8px;
+        left: 16px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: left;
+    }
+    .head3 h2{
+        position: absolute;
+        position: absolute;
+        bottom: 8px;
+        left: 16px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: left;
+    }
+    }
+  /* Small screens */
+  @media all and (min-width: 100px) and (max-width: 400px) {
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    .detailsofcontent{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 40px;
+    }
+    .downstore{
+        display: grid;
+        background-color: white;
+        grid-template-columns: repeat(1,1fr);
+        justify-content: center;
+        margin-top: 0px;
+    }
+    #lastlineafterlogo {
+        display: grid;
+        justify-content: center;
+        text-align: center;
+        grid-template-columns: repeat(1,1fr);
+    }
+  }
