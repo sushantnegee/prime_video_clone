@@ -10,7 +10,7 @@
 }
 /* NavBar of Payment Page */
 #upperPart{
-    background-color: #222222;
+    background-color:rgb(26,36,47);
     display: flex;
     justify-content: space-between;
     color: #fff;
@@ -277,7 +277,7 @@ table th {
 
 /* footer part */
 #footer {
-    background-color: #222222;
+    background-color: rgb(15 23 30);
     text-align: center;
     padding: 20px;
     font-weight: 300;
@@ -293,3 +293,9 @@ table th {
     margin-right: 4px;
     color: #0f79af;
   }
+  #footer img{
+    width: 109px;
+    height: 32px;
+    cursor: pointer;
+  }
+
