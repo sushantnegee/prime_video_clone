@@ -63,7 +63,7 @@
     padding: 18px 0;
     padding: 10px;
     font-size: 15px;
-    background-color: rgb(209, 122, 16);
+    background-color: rgb(241,198,91);
 
   }
   div.container div.myform button :hover {
@@ -108,4 +108,11 @@
   
   a:hover {
     color: red;
+  }
+  input:focus {
+    box-shadow: 0 0 6px rgba(0, 140, 255, 0.941);
+    padding: 3px 0px 3px 3px;
+    margin: 5px 1px 3px 0px;
+    border: 6px solid rgb(255, 0, 0);
+    /* border: 0px; */
   }

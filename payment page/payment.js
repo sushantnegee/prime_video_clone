@@ -30,7 +30,7 @@ const renderCards = () => {
         td2.innerText = el.cnum;
 
         var td3 = document.createElement("td");
-        td3.innerText = el.cvv;
+        td3.innerText = el.expiry;
 
 
 

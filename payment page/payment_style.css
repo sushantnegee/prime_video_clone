@@ -153,19 +153,20 @@ table {
   
   
 table th {
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding-top: 7px;
+    padding-bottom: 7px;
     text-align: left;
     background-color: rgb(15,121,175);
     color: white;
     text-align: center;
     margin: 20px;
+    border-radius: 3px;
   }
   * {
     box-sizing: border-box;
   }
 #add_card{
-    background-color: #0F79AF;
+    background-color: rgb(15,121,175);
     font-size: 14px;
     font-weight: 400;
     color: black;
@@ -183,6 +184,8 @@ table th {
 
 
 .save_card_heading{
+    font-size: x-large;
+    margin-bottom:  -15px;
     font-weight: 500;
     text-decoration:underline;
     
@@ -229,7 +232,7 @@ table th {
 }
 .promoClass{
     font-size: 18px;
-    color: #007185;
+    color: rgb(15,121,175)185;
 }
 
 .promoCode:hover{
@@ -252,7 +255,7 @@ table th {
 }
 .btn > button{
     cursor: pointer;
-    background-color: #f3bd35;
+    background-color: rgb(15,121,175);
     font-size: 17px;
     font-weight: 400;
     color: #000;

@@ -9,7 +9,7 @@
   }
   div.container {
     position: absolute;
-    top: 46%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
@@ -53,10 +53,11 @@
     padding: 15px;
     font-size: 15px;
     margin-left:10px;
-    background-color: rgb(220, 168, 104);
+    background-color: rgb(241,198,91);
 
   }
   img{
+    /* margin-bottom: -10px; */
     display: block;
     margin: auto;
     display: flex;
@@ -74,6 +75,7 @@
   label {
     position: relative;
     border-color: rgb(18, 14, 14);
+    /* border-radius: 3px; */
     font-weight: bold;
     margin-top: -20px;
   }
@@ -107,4 +109,21 @@
   .inputgroup {
     margin-bottom: 20px;
     padding: 5px 10px;
+    
   }
+  /* .inputgroup input:hover{
+    box-shadow: 1px 1px 1px 1px rgba(214, 214, 8, 0.744) inset,inset  1px 1px 1px 1px rgba(255,255,255,0.3);
+  } */
+  /* input{
+    border-radius: 2px;
+  } */
+  input:focus {
+    box-shadow: 0 0 6px rgba(0, 140, 255, 0.941);
+    padding: 3px 0px 3px 3px;
+    margin: 5px 1px 3px 0px;
+    border: 6px solid rgb(255, 0, 0);
+    /* border: 0px; */
+  }
+  /* .myform input{
+    border-radius: px;
+  } */
