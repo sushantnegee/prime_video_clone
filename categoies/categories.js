@@ -37,7 +37,7 @@ var slideshowContainer;
 
 window.addEventListener("load",function() {
     showSlides(slideIndex);
-    myTimer = setInterval(function(){plusSlides(1)}, 4000);
+    myTimer = setInterval(function(){plusSlides(1)}, 000);
   
     //COMMENT OUT THE LINE BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
     slideshowContainer = document.getElementsByClassName('slideshow-inner')[0];
@@ -45,8 +45,8 @@ window.addEventListener("load",function() {
     //UNCOMMENT OUT THE LINE BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
     // slideshowContainer = document.getElementsByClassName('slideshow-container')[0];
   
-    slideshowContainer.addEventListener('mouseenter', pause)
-    slideshowContainer.addEventListener('mouseleave', resume)
+    slideshowContainer.addEventListener("onmouseenter", pause)
+    slideshowContainer.addEventListener("onmouseover", resume)
 })
 
 // NEXT AND PREVIOUS CONTROL
@@ -504,7 +504,7 @@ list1.forEach(function (elem, index) {
   // button.innerText = index;
   // popUp1st.append(h4, button);
   divAdd.setAttribute("class", "addButton");
-  divAdd.innerHTML= '<i class="fa fa-plus" aria-hidden="true"></i>';
+  divAdd.innerHTML= '<i class="fa fa-bookmark icon-large" aria-hidden="true"></i>';
   popUpImgDiv.append(img,imgPrime);
   popUp1st.append(h4, divAdd);
   popUpSecond.append(p1, p4);
