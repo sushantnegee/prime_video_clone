@@ -122,6 +122,7 @@ function paid(){
         if(otp.length==6)
         {
             alert("Payment Successful");
+            window.location.assign("/categoies/categories.html");
         }
         else{
             alert("Invalid OTP");
