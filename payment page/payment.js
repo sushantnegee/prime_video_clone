@@ -12,6 +12,40 @@ function ShowAndHide() {
 }
 // card details checking logic
 document.getElementById("add_card").addEventListener("click", check);
+
+
+const renderCards = () => {
+    const cards = JSON.parse(localStorage.getItem('cards')) || []
+
+    document.querySelector("tbody").innerHTML = null
+    cards.forEach((el, index) => {
+        // save card
+        var tr = document.createElement("tr");
+
+
+        var td1 = document.createElement("td");
+        td1.innerText = el.name;
+
+        var td2 = document.createElement("td");
+        td2.innerText = el.cnum;
+
+        var td3 = document.createElement("td");
+        td3.innerText = el.cvv;
+
+
+
+        var td4 = document.createElement("td");
+        td4.innerText = "Delete";
+        td4.style.color = "crimson";
+        td4.addEventListener("click", (event) => rowdelete(event, index))
+
+        tr.append(td1, td2, td3, td4);
+        document.querySelector("tbody").append(tr);
+
+
+    })
+}
+renderCards();
 function check(event) {
 
     event.preventDefault()
@@ -19,10 +53,10 @@ function check(event) {
     var name = document.getElementById('cname').value;
     var cnum = document.getElementById('ccnum').value;
     var cvv = document.getElementById('ccvv').value;
-    var expiry=document.getElementById('expmonth');
+    var expiry = document.getElementById('expmonth').value;
 
 
-    
+
     if (name.length == 0 && cnum.length == 0) {
         alert('Please fill in name and cardNumber');
 
@@ -37,10 +71,6 @@ function check(event) {
     } else if (cvv.length != 3) {
         alert("CVV not valid");
     } else {
-        localStorage.setItem('name', name);
-        localStorage.setItem('cnum', cnum);
-        localStorage.setItem('cvv', cvv);
-        localStorage.setItem('expiry',expiry.value);
         // enabling continue button
         var continueBtn = document.querySelector('.continueBtn');
         continueBtn.style.opacity = '1';
@@ -48,88 +78,68 @@ function check(event) {
         continueBtn.removeAttribute('disabled');
         alert('Your Card id Added');
 
-        // save card
-        var tr=document.createElement("tr");
+        const cards = JSON.parse(localStorage.getItem('cards')) || []
+        cards.push({ name, cnum, cvv, expiry })
+        localStorage.setItem('cards', JSON.stringify(cards))
+        renderCards()
 
-
-        var td1=document.createElement("td");
-        td1.innerText=name;
-
-        var td2=document.createElement("td");
-        td2.innerText=cnum;
-
-        var td3=document.createElement("td");
-        td3.innerText=cvv;
-
-        
-        
-        var td4=document.createElement("td");
-        td4.innerText="Delete";
-        td4.style.color="crimson";
-        td4.addEventListener("click",rowdelete)
-
-        tr.append(td1,td2,td3,td4);
-        document.querySelector("tbody").append(tr);
     }
 
-   
-    
+
+
 }
 // delete function in table
-function rowdelete(){
-    event.target.parentNode.remove();
-    event.target.parentNode.innerHTML = "";
-    }
+function rowdelete(event, index) {
+    const cards = JSON.parse(localStorage.getItem('cards')) || []
+    cards.splice(index, 1)
+    // cards = JSON.parse(localStorage.getItem('cards')) || []
+    localStorage.setItem('cards', JSON.stringify(cards))
+    renderCards()
+}
 
 // promocode hide and show logic
 document.getElementById("promoDown").addEventListener("click", promoClick);
 function promoClick() {
-    if(document.querySelector('.promoClass').style.display == 'block')
-    {
+    if (document.querySelector('.promoClass').style.display == 'block') {
         document.querySelector('.promoClass').style.display = 'none';
     }
-    else
-    {
+    else {
         document.querySelector('.promoClass').style.display = 'block';
     }
-    
+
 }
 
 // checking promocode is valid or not
-document.getElementById("apply_coupon").addEventListener("click",validPromoCode);
-function validPromoCode(){
-    var valid=document.getElementById("code").value;
-    if(valid==="MASAI30")
-    {
-        document.getElementById("validpromo").innerText="You get 30 days extra free subscription";
+document.getElementById("apply_coupon").addEventListener("click", validPromoCode);
+function validPromoCode() {
+    var valid = document.getElementById("code").value;
+    if (valid === "MASAI30") {
+        document.getElementById("validpromo").innerText = "You get 30 days extra free subscription";
     }
-    else if(valid==="masai30")
-    {
-        document.getElementById("validpromo").innerText="You get 30 days extra free subscription";
+    else if (valid === "masai30") {
+        document.getElementById("validpromo").innerText = "You get 30 days extra free subscription";
     }
-    else{
-        document.getElementById("validpromo").innerText="Invalid PromoCode";
+    else {
+        document.getElementById("validpromo").innerText = "Invalid PromoCode";
     }
 }
 
 // checking OTP and final payment 
-document.querySelector(".continueBtn").addEventListener("submit",paid);
-function paid(){
+document.querySelector(".continueBtn").addEventListener("submit", paid);
+function paid() {
     var continueBtn = document.querySelector('.continueBtn');
-    if(continueBtn.style.opacity === '1')
-    {
+    if (continueBtn.style.opacity === '1') {
         var otp = prompt('Enter a six digit OTP');
-        if(otp.length==6)
-        {
+        if (otp.length == 6) {
             alert("Payment Successful");
-            window.location.assign("/categoies/categories.html");
+            
+            window.location.href = '/categoies/categories.html';
+            
         }
-        else{
+        else {
             alert("Invalid OTP");
         }
     }
 
 
 }
-
-

@@ -11,6 +11,8 @@
     font-size: 17px;
     line-height: 20px;
     font-weight: 400;
+    margin-bottom: 20px;
+    margin-top: 20px;
     background-color: #0f79af;
     text-align: center;
     color: #fff;
@@ -53,6 +55,7 @@
     font-size: 44px;
     line-height: 48px;
     font-weight: 400;
+    margin-bottom: 50px;
   }
   
   h2 {
@@ -92,7 +95,7 @@
     padding: 80px;
     padding-bottom: 150px;
     text-align: left;
-    margin-left: 48%;
+    margin-left: 44%;
     /* margin-bottom: 120px; */
   }
 

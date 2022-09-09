@@ -17,5 +17,5 @@ function login(event) {
   } else {
     alert("Enter Correct Username and Password");
   }
-  // window.location.href = "./Home/after-login.html";
+  // window.location.href = "../Home/after-login.html";
 }

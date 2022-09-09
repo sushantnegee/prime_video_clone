@@ -12,6 +12,7 @@ button {
   line-height: 20px;
   font-weight: 400;
   background-color: #0f79af;
+  margin: 20px 0;
   text-align: center;
   color: #fff;
   border-radius: 5px;
@@ -52,6 +53,7 @@ button {
 h1 {
   font-size: 44.8px;
   line-height: 49.6px;
+  margin-bottom: 30px;
   font-weight: 400;
 }
 
