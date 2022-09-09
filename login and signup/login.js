@@ -13,8 +13,9 @@ function login(event) {
   }
   if (flag) {
     alert("Login Successfull");
+    window.location.assign("/Home/after-login.html")
   } else {
     alert("Enter Correct Username and Password");
   }
-  window.location.href = "./signup.html";
+  // window.location.href = "./Home/after-login.html";
 }
