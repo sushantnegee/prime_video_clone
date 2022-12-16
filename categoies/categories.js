@@ -1,34 +1,3 @@
-// let slideIndex = 1;
-// showSlides(slideIndex);
-
-// function plusSlides(n) {
-//   showSlides((slideIndex += n));
-// }
-
-// function currentSlide(n) {
-//   showSlides((slideIndex = n));
-// }
-
-// function showSlides(n) {
-//   let i;
-//   let slides = document.getElementsByClassName("mySlides");
-//   let dots = document.getElementsByClassName("dot");
-//   if (n > slides.length) {
-//     slideIndex = 1;
-//   }
-//   if (n < 1) {
-//     slideIndex = slides.length;
-//   }
-//   for (i = 0; i < slides.length; i++) {
-//     slides[i].style.display = "none";
-//   }
-//   for (i = 0; i < dots.length; i++) {
-//     dots[i].className = dots[i].className.replace(" active", "");
-//   }
-//   slides[slideIndex - 1].style.display = "block";
-//   dots[slideIndex - 1].className += " active";
-// }
-
 var slideIndex = 1;
 
 var myTimer;
@@ -99,12 +68,6 @@ resume = () =>{
   myTimer = setInterval(function(){plusSlides(slideIndex)}, 4000);
 }
 
-// middle part (movie boxes)
-// document.querySelector("button").addEventListener("click", videobox);
-// function videobox() {
-//   // event.preventDefault();
-
-// }
 var list1 = [
   {
     name: "KGF 2",
@@ -504,7 +467,7 @@ list1.forEach(function (elem, index) {
   // button.innerText = index;
   // popUp1st.append(h4, button);
   divAdd.setAttribute("class", "addButton");
-  divAdd.innerHTML= '<i class="fa fa-bookmark icon-large" aria-hidden="true"></i>';
+  divAdd.innerHTML= '<i id"bookmark" class="fa fa-bookmark icon-large" aria-hidden="true"></i>';
   popUpImgDiv.append(img,imgPrime);
   popUp1st.append(h4, divAdd);
   popUpSecond.append(p1, p4);
@@ -515,7 +478,9 @@ list1.forEach(function (elem, index) {
     console.log(elem);
     wishlists.push(elem);
     localStorage.setItem("wishlists",JSON.stringify(wishlists));
+    alert(`${elem.name} is Added to WatchList`);
   }
+  
   
 });
 document.getElementById("innerImages").append(div);
